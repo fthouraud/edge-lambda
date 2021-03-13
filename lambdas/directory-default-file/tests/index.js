@@ -38,8 +38,6 @@ test('should ignore intermediate folder even containing a dot', (t) => {
   const event = createCloudFrontRequest('/foo.anything/bar')
   const callback = fake()
 
-  const expectedRequest = { uri: '/foo.anything/bar/index.html' }
-
   handler(event, undefined, callback)
 
   t.true(callback.calledOnceWithExactly(null, event.Records[0].cf.request))
