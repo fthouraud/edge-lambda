@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "prettier"
+  ],
+
+  "overrides": [
+    {
+      "files": [
+        "lambdas/**/tests/**/*.js"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "prettier",
+        "plugin:ava/recommended"
+      ]
+    }
+  ]
+}

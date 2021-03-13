@@ -1,0 +1,5 @@
+include:
+  - lambdas/**/lib/**/*
+reporter:
+  - cobertura
+  - text
