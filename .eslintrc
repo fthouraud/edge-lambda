@@ -8,6 +8,10 @@
     "sourceType": "module",
     "ecmaVersion": 2020
   },
+  "ignorePatterns": [
+    "distribution",
+    "packages"
+  ],
   "extends": [
     "eslint:recommended",
     "prettier"

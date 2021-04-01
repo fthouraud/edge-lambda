@@ -10,11 +10,8 @@ export const handler = (event, context, callback) => {
 }
 
 const getAuthorizationHeaderValue = (request) => {
-  if (request.headers && request.headers['authorization'] && request.headers.authorization[0]) {
-    let rawAuthorizationValue = request.headers.authorization[0]['value']
-    return rawAuthorizationValue ? rawAuthorizationValue.replace('Basic ', '') : undefined
-  }
-  return undefined
+  const authorization = request?.headers?.authorization?.[0]?.value
+  return authorization ? authorization.replace('Basic ', '') : undefined
 }
 
 const isAuthorizationValid = (authorizationToValidate) =>

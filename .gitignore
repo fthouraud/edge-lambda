@@ -19,3 +19,7 @@ node_modules/
 .yarn/*
 !.yarn/releases
 .yarn-integrityg add
+
+# Project specific
+distribution
+!packages/.keep

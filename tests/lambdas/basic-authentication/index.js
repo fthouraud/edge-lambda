@@ -1,7 +1,7 @@
 import test from 'ava'
 import { fake } from 'sinon'
 
-import { handler, UnauthorizedResponse } from '../lib'
+import { handler, UnauthorizedResponse } from '../../../lambdas/basic-authentication'
 
 test('should return the request when authentication hash are equal', (t) => {
   const request = createCloudFrontRequest('dGVzdDp0ZXN0Cg==')

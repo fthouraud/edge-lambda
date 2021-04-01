@@ -1,7 +1,7 @@
 import test from 'ava'
 import { fake } from 'sinon'
 
-import { handler } from '../lib'
+import { handler } from '../../../lambdas/directory-default-file'
 
 test('should rewrite request URI when path is a directory', (t) => {
   const event = createCloudFrontRequest('/foo')
