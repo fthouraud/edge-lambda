@@ -1,4 +1,5 @@
 export default {
-  require: ['esm'],
-  files: ['lambdas/**/tests/**/*'],
+  babel: true,
+  require: ['esm', '@babel/register'],
+  files: ['tests/**/*'],
 }

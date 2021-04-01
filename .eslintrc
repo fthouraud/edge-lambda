@@ -4,21 +4,16 @@
     "node": true,
     "es6": true
   },
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
   "extends": [
     "eslint:recommended",
     "prettier"
   ],
-
-  "overrides": [
-    {
-      "files": [
-        "lambdas/**/tests/**/*.js"
-      ],
-      "extends": [
-        "eslint:recommended",
-        "prettier",
-        "plugin:ava/recommended"
-      ]
-    }
-  ]
+  "plugins": ["import"],
+  "rules": {
+    "import/order": ["error", { "newlines-between": "always" }]
+  }
 }
