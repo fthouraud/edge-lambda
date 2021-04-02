@@ -18,6 +18,7 @@ node_modules/
 # Yarn
 .yarn/*
 !.yarn/releases
+!.yarn/plugins
 .yarn-integrityg add
 
 # Project specific
