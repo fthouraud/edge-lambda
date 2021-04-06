@@ -5,7 +5,8 @@
   "author": "Fabien Thouraud <fabien.thouraud@outlook.com>",
   "license": "MIT",
   "workspaces": [
-    "lambdas/**/*"
+    "lambdas/**/*",
+    "cli/**/*"
   ],
   "devDependencies": {
     "@ava/babel": "^1.0.1",
@@ -13,14 +14,15 @@
     "@babel/core": "^7.13.14",
     "@babel/preset-env": "^7.13.12",
     "@babel/register": "^7.13.14",
-    "@commitlint/cli": "^12.1.0",
-    "@commitlint/config-conventional": "^12.1.0",
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
     "@types/archiver": "^5.1.0",
     "@types/sinon": "^9.0.11",
     "@types/yargs": "^16.0.1",
     "archiver": "^5.3.0",
     "ava": "^3.15.0",
-    "aws-sdk": "^2.878.0",
+    "aws-sdk": "^2.880.0",
+    "babel-plugin-shebang": "^1.0.0",
     "eslint": "^7.23.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-ava": "^12.0.0",
@@ -38,6 +40,7 @@
   "scripts": {
     "test": "ava -v",
     "test:coverage": "nyc ava -v",
-    "compile": "babel --out-dir distribution --copy-files lambdas"
+    "compile:lambdas": "babel --out-dir distribution --copy-files lambdas",
+    "compile:cli": "babel --out-dir distribution/cli --copy-files cli"
   }
 }

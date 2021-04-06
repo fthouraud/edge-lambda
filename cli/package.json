@@ -1,0 +1,6 @@
+{
+  "name": "edge-lambdas-cli",
+  "description": "A CLI to help manipulate the lambdas.",
+  "version": "1.0.0",
+  "main": "index.js"
+}

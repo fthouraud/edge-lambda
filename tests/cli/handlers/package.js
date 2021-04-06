@@ -1,7 +1,6 @@
 import test from 'ava'
 import { spy, stub } from 'sinon'
 
-import { getLambdaZipFile } from '../../../cli/utils/path'
 import * as pathUtils from '../../../cli/utils/path'
 import * as zipUtils from '../../../cli/utils/zip'
 import * as checksumUtils from '../../../cli/utils/checksum'
